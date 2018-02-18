@@ -63,7 +63,6 @@ public class BinanceRequest {
     public BinanceRequest(String requestUrl) {
         this.requestUrl = requestUrl;
     }
-
     // HMAC encoding
     public static String encode(String key, String data) throws Exception {
         Mac sha256_HMAC = Mac.getInstance("HmacSHA256");
@@ -250,7 +249,7 @@ public class BinanceRequest {
 
             BufferedReader br = new BufferedReader( new InputStreamReader(is));
             lastResponse = IOUtils.toString(br);
-            log.debug("Response: {}", lastResponse);
+            log.warn("Response: {}", lastResponse);
 
             if (conn.getResponseCode() >= HttpURLConnection.HTTP_BAD_REQUEST) {
                 // Try to parse JSON

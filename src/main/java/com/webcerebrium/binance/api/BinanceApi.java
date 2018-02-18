@@ -55,8 +55,8 @@ import java.util.concurrent.ConcurrentHashMap;
 public class BinanceApi {
 
     /* Actual API key and Secret Key that will be used */
-    public String apiKey="BD6ui0pIdKeGpXnmrzdZ5LJlhmVR3PAUIjskYGBfSnr4Crf5l9AT3PcI7JcRcGjT";
-    public String secretKey="zXRxMepVVDfHTiIoSS3GhQDUygOA6lSekoda1bQe0nJsCBRKGUTEF7owVoCm4TlZ";
+    public String apiKey;
+    public String secretKey;
 
     /**
      * API Base URL
